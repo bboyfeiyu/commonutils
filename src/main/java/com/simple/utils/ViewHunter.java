@@ -4,7 +4,7 @@ import android.view.View;
 
 /**
  * 避免每次findViewById都进行类型转换的工具类
- * <p/>
+ *
  * Created by mrsimple on 15/3/16.
  */
 public class ViewHunter {

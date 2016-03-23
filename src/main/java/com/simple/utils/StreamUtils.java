@@ -16,9 +16,9 @@ public final class StreamUtils {
 
     /**
      * stream to string
-     * @param inputStream
-     * @return
-     * @throws IOException
+     * @param inputStream 输入流
+     * @return 返回string
+     * @throws IOException io异常
      */
 	public static String streamToString(InputStream inputStream)
 			throws IOException {
@@ -34,7 +34,7 @@ public final class StreamUtils {
 
     /**
      * 关闭Closeable对象
-     * @param closeable
+     * @param closeable 要关闭的对象
      */
 	public static void closeSilently(Closeable closeable) {
 		if (closeable != null) {

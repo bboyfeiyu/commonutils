@@ -29,7 +29,7 @@ public final class DeviceUtils {
 
     /**
      * 获取设备的dpi
-     * @return
+     * @return 返回设备dpi
      */
     public static int getDeviceDpi(Context context) {
         DisplayMetrics metrics = context.getResources().getDisplayMetrics() ;
@@ -38,8 +38,8 @@ public final class DeviceUtils {
 
     /**
      *
-     * @param context
-     * @return
+     * @param context 上下文
+     * @return 返回应用版本名
      */
     public static String getAppVersonName(Context context) {
         PackageManager manager = context.getPackageManager();
@@ -55,8 +55,8 @@ public final class DeviceUtils {
 
     /**
      * 获取版本号 Code
-     * @param context
-     * @return
+     * @param context 上下文
+     * @return 版本号 Code
      */
     public static String getAppVersonCode(Context context) {
         PackageManager manager = context.getPackageManager();

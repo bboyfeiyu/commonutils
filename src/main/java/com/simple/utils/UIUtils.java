@@ -29,7 +29,7 @@ public final class UIUtils {
     /**
      * 获得屏幕的英寸的英寸, 计算方法 : http://blog.csdn.net/moruite/article/details/7281428
      *
-     * @return
+     * @return 屏幕的英寸
      */
     public static double getScreenInch(Context context) {
         WindowManager wm = (WindowManager) context.getSystemService(
@@ -43,7 +43,10 @@ public final class UIUtils {
     }
 
     /**
-     * dip 转为 px
+     * dp转px
+     * @param context 上下文
+     * @param dipValue dp值
+     * @return 返回对应的px值
      */
     public static int dp2px(Context context, float dipValue) {
         final float scale = context.getResources().getDisplayMetrics().density;
@@ -51,7 +54,10 @@ public final class UIUtils {
     }
 
     /**
-     * px 转为 dip
+     * px转dp
+     * @param context 上下文
+     * @param pxValue 像素值
+     * @return 返回对应的dp值
      */
     public static int px2dp(Context context, float pxValue) {
         final float scale = context.getResources().getDisplayMetrics().density;
@@ -61,7 +67,7 @@ public final class UIUtils {
     /**
      * 获取视图在屏幕中的位置
      *
-     * @param view
+     * @param view 要获取坐标的视图
      * @return 返回一个含有2个元素的数组, 第一个元素是x坐标、第二个为y坐标
      */
     public static int[] getViewLocationInScreen(View view) {
@@ -73,7 +79,7 @@ public final class UIUtils {
     /**
      * 获取视图在一个Window中的位置
      *
-     * @param view
+     * @param view 要获取坐标的视图
      * @return 返回一个含有2个元素的数组, 第一个元素是x坐标、第二个为y坐标
      */
     public static int[] getViewLocationInWindow(View view) {

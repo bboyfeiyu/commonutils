@@ -48,8 +48,8 @@ public class MD5Encript {
     /**
      * 对key进行MD5加密，如果无MD5加密算法，则直接使用key对应的hash值。</br>
      * 
-     * @param key
-     * @return
+     * @param key 要加密的数据
+     * @return 返回md5加密后的值
      */
     public static String toMD5(String key) {
         String cacheKey;
@@ -63,8 +63,8 @@ public class MD5Encript {
     }
 
     /**
-     * @param bytes
-     * @return
+     * @param bytes 字节
+     * @return 返回处理后的字节
      */
     private static String bytesToHexString(byte[] bytes) {
         StringBuilder sb = new StringBuilder();
